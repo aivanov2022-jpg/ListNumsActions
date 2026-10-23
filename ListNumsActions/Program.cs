@@ -23,9 +23,17 @@
                         Console.WriteLine(string.Join(" ", nums));
                         break;
                     case "contains":
-                        
-                        //TODO
-                        break;
+                       if (nums.Contains(int.Parse(cmd[1])) == true)
+                       {
+
+                            Console.WriteLine("Yes");
+
+                       }
+                       else
+                       {
+                            Console.WriteLine("No");
+                       }
+                       break;
 
 
                     //TO DO

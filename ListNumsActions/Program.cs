@@ -53,6 +53,19 @@
                         nums.RemoveAt(remove);
                         break;
 
+                    case "countl":
+                       foreach (var item in nums)
+                        {
+                            if(item > int.Parse(cmd[1]))
+                            {
+                                Console.WriteLine(item);
+                            }
+
+                        }
+
+
+                    break;
+
 
 
 

@@ -40,6 +40,14 @@
                         int delete = int.Parse(cmd[1]);
                         nums.Remove(delete);
                         break;
+
+                    case "add":
+                        nums.Add(int.Parse(cmd[1]) + int.Parse(cmd[2]));
+
+
+                        break;
+                        
+
                     case "remove":
                         int remove = int.Parse(cmd[1]);
                         nums.RemoveAt(remove);
@@ -55,6 +63,35 @@
 
                         }
                         Console.WriteLine(odd);
+                        break;
+
+
+                    case "countl":
+                       foreach (var item in nums)
+                        {
+                            if(item > int.Parse(cmd[1]))
+                            {
+                                Console.WriteLine(item);
+                            }
+
+                        }
+
+
+                    break;
+
+                    case "countEvens":
+                        int even = 0;
+
+                        foreach(var item in nums)
+                        {
+                            if(item %  2 == 0)
+                            {
+                                even++;
+                            }
+
+                        }
+                        Console.WriteLine(even);
+
                         break;
 
 

@@ -44,6 +44,19 @@
                         int remove = int.Parse(cmd[1]);
                         nums.RemoveAt(remove);
                         break;
+                    case "countOdds":
+                        int odd = 0;
+                        foreach(var item in nums)
+                        {
+                            if(item % 2 != 0)
+                            {
+                                odd++;
+                            }
+
+                        }
+                        Console.WriteLine(odd);
+                        break;
+
 
 
 

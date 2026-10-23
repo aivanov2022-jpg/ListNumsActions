@@ -22,15 +22,13 @@
                     case "print":
                         Console.WriteLine(string.Join(" ", nums));
                         break;
-                    case "contains":
+                    case "delete":
+                        int delete = int.Parse(cmd[1]);
+                        nums.Remove(delete);
+                        break;
                         
-                        //TODO
-                        break;
 
 
-                    //TO DO
-                    default:
-                        break;
                 }
             }
         }

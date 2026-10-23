@@ -22,6 +22,7 @@
                     case "print":
                         Console.WriteLine(string.Join(" ", nums));
                         break;
+
                     case "contains":
                        if (nums.Contains(int.Parse(cmd[1])) == true)
                        {
@@ -35,10 +36,14 @@
                        }
                        break;
 
-
-                    //TO DO
-                    default:
+                    case "delete":
+                        int delete = int.Parse(cmd[1]);
+                        nums.Remove(delete);
                         break;
+                        
+
+
+
                 }
             }
         }

@@ -66,6 +66,21 @@
 
                     break;
 
+                    case "countEvens":
+                        int even = 0;
+
+                        foreach(var item in nums)
+                        {
+                            if(item %  2 == 0)
+                            {
+                                even++;
+                            }
+
+                        }
+                        Console.WriteLine(even);
+
+                        break;
+
 
 
 

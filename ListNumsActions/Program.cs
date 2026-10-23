@@ -40,12 +40,19 @@
                         int delete = int.Parse(cmd[1]);
                         nums.Remove(delete);
                         break;
+
                     case "add":
                         nums.Add(int.Parse(cmd[1]) + int.Parse(cmd[2]));
 
 
                         break;
                         
+
+                    case "remove":
+                        int remove = int.Parse(cmd[1]);
+                        nums.RemoveAt(remove);
+                        break;
+
 
 
 

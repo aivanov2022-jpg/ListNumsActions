@@ -26,7 +26,10 @@
                         int delete = int.Parse(cmd[1]);
                         nums.Remove(delete);
                         break;
-                        
+                    case "remove":
+                        int remove = int.Parse(cmd[1]);
+                        nums.RemoveAt(remove);
+                        break;
 
 
                 }

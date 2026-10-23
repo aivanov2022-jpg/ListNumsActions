@@ -93,6 +93,14 @@
                         Console.WriteLine(even);
 
                         break;
+                    case "sumAll":
+                        double sum = 0;
+                        foreach(var item in nums)
+                        {
+                            sum = sum + item;
+                        }
+                        Console.WriteLine($"{sum / nums.Count:F2}");
+                        break;
 
 
 
